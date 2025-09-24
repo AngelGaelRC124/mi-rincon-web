@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Rincón en la Web — Angel Gael</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5dc;
+      color: #333;
+      display: flex;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 200px;
+      background-color: #654321;
+      padding-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin: 10px 0;
+      padding: 8px 15px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      width: 150px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    nav a:hover { opacity: 0.8; }
+
+    nav a.sobre-mi { background-color: #8fbc8f; }
+    nav a.habilidades { background-color: #a0522d; }
+    nav a.proyectos { background-color: #deb887; }
+    nav a.contacto { background-color: #6b8e23; }
+
+    main {
+      margin-left: 220px;
+      max-width: 1000px;
+      padding: 2rem;
+    }
+
+    section {
+      background-color: rgba(245, 245, 220, 0.8);
+      padding: 2rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+    }
+
+    article { margin-bottom: 1.5rem; }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(245, 245, 220, 0.8);
+      border-radius: 10px;
+      margin: 2rem 220px 2rem 220px;
+    }
+
+    ul { padding-left: 1.2rem; }
+
+    a { color: #654321; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    header {
+      margin-top: 20px;
+      text-align: center;
+      padding: 2rem;
+      background-image: url('imagenes/portada.jpg');
+      background-size: cover;
+      background-position: center;
+      border: 8px solid #654321;
+      border-radius: 15px;
+      color: white;
+    }
+
+    header h1, header p {
+      text-shadow: 2px 2px 4px #000000;
+    }
+
+    header img {
+      border-radius: 15px;
+      margin-top: 1rem;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    section img {
+      border-radius: 15px;
+      margin-top: 1rem;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    #quesito { width: 200px; height: 200px; }
+  </style>
+</head>
+<body>
+
+  <!-- Menú lateral -->
+  <nav>
+    <a href="#sobre-mi" class="sobre-mi">Sobre mí</a>
+    <a href="#habilidades" class="habilidades">Habilidades</a>
+    <a href="#proyectos" class="proyectos">Proyectos</a>
+    <a href="#contacto" class="contacto">Contacto</a>
+  </nav>
+
+  <main>
+    <!-- Header -->
+    <header>
+      <h1>Angel Gael Rodriguez</h1>
+      <p>¡Bienvenidos a mi rincón digital 🐼</p>
+      <img src="imagenes/gael.jpeg" alt="Foto de Angel Gael">
+    </header>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <article>
+        <h3>YO</h3>
+        <p>Hola, mi nombre es Angel Gael Rodriguez Castañeda, tengo 21 años</p>
+        <img src="imagenes/gael2.jpeg" alt="Angel Gael">
+      </article>
+      <article>
+        <h3>Tengo varias mascotas, tanto perros como gatitos!</h3>
+
+        <h3>Cajeta</h3>
+        <p>Ella se llama Cajeta y es mi primer gatita después de muchos años, ya tiene casi un año aunque ya es mamá.</p>
+        <img src="imagenes/cajeta.jpeg" alt="Cajeta">
+
+        <h3>Quesito</h3>
+        <p>Él es Quesito, uno de los hijos de Cajeta. Ya tiene casi 5 meses.</p>
+        <img src="imagenes/quesito.jpeg" alt="Quesito" id="quesito">
+
+        <h3>Lucas</h3>
+        <p>Él es Lucas, mi perrito más grandote, aunque no es el mayor, es el más cariñoso y con el que mejor me llevo.</p>
+        <img src="imagenes/lucas.jpeg" alt="Lucas">
+
+        <h3>Prisca</h3>
+        <p>Ella es mi perrita Prisca, aunque no somos tan cercanos, la quiero mucho. Es la menor de todos mis perritos.</p>
+        <img src="imagenes/prisca.jpeg" alt="Prisca">
+
+        <img src="imagenes/lucas y prisca.jpeg" alt="Lucas y Prisca">
+        
+        <h3>Sami</h3>
+        <p>Él es Sami, mi segundo perrito de mayor edad. Cumplirá 8 años en octubre.</p>
+        <img src="imagenes/sami.jpeg" alt="Sami">
+      </article>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades">
+      <h2>Mis Habilidades</h2>
+      <article>
+        <h3>Música</h3>
+        <p>Soy un gran entusiasta de la música, en especial cuando es tocada en vivo! Desde niño estuve dentro del ámbito musical, inicié a los 8 años en una banda sinfónica (el de esta foto soy yo tocando el bajo y en la otra yo a los 8 con mi Oboe y compañeros de banda).</p>
+        <img src="imagenes/paramo.jpeg" alt="Tocando bajo">
+        <img src="imagenes/oboe.jpeg" alt="Con Oboe">
+      </article>
+      <article>
+        <h3>Producción musical</h3>
+        <p>Me gusta grabar y producir música. Hace poco junto con mi banda hicimos la grabación y "mini" producción de un sencillo llamado "Menina".</p>
+        <img src="imagenes/grabacion.jpeg" alt="Producción musical">
+      </article>
+      <article>
+        <h3>Fotografía y documentales</h3>
+        <p>Me encanta tomar fotos y documentar cosas que hago o de las que soy parte, como la música.</p>
+        <img src="imagenes/aves.jpeg" alt="Fotografía">
+        <img src="imagenes/abi.jpeg" alt="Documentales">
+      </article>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos">
+      <h2>Mis Proyectos</h2>
+      <article>
+        <h3>Proyecto producción musical</h3>
+        <p>Junto con compañeros de grupo encaminamos nuestro proyecto de producción musical con el objetivo de evolucionar a algo más formal.</p>
+        <img src="imagenes/produccion.png" alt="Producción musical">
+      </article>
+      <article>
+        <h3>Taller de reparación</h3>
+        <p>Tengo mi propio "taller" para la reparación y mantenimiento de equipo musical, principalmente especializado en componentes electrónicos.</p>
+        <img src="imagenes/reparacion.jpeg" alt="Taller de reparación">
+      </article>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Puedes encontrarme en las siguientes redes o enviarme un correo:</p>
+      <ul>
+        <li>Email: <a href="mailto:Gael@example.com">Gael@example.com</a></li>
+        <li>GitHub: <a href="https://github.com/">github.com/tuusuario</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/">linkedin.com/in/tuusuario</a></li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      &copy; Angel Rodriguez - Mi Rincon Web
+    </footer>
+  </main>
+
+</body>
+</html>
